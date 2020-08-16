@@ -3,8 +3,6 @@ import {connect} from 'react-redux'
 import moment from 'moment'
 import {startRemoveTask, startPutTask} from '../actions/taskAction'
  
-
-
 class TaskBox extends React.Component{
     constructor(){
         super()
