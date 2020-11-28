@@ -1,4 +1,4 @@
-import redux from 'redux'
+ import redux from 'redux'
 import thunk from 'redux-thunk'
 import {createStore, combineReducers, applyMiddleware} from 'redux'
 import tasksReducer from '../reducers/tasksReducer'

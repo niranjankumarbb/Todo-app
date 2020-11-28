@@ -19,7 +19,7 @@ module.exports.create = (req,res)=>{
         res.json(employee)
     })
     .catch((err)=>{
-        res.json(err)
+        res.json(err)  
     })
 }
 

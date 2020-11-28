@@ -1,5 +1,5 @@
- import React from 'react'
- import 'bootstrap/dist/css/bootstrap.css'
+import React from 'react'
+import 'bootstrap/dist/css/bootstrap.css'
 import {BrowserRouter, Link, Route,Switch} from 'react-router-dom'
 import {connect } from 'react-redux'
 import Home from './components/Home'
