@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const configuredb = () => {
-        mongoose.connect('mongodb+srv://Niranjan:cloudmongodb@cluster32.yxthb.mongodb.net/express-server-jan?retryWrites=true&w=majority', {   
+        mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/express-server-mvc', {   
             useNewUrlParser: true, 
             useUnifiedTopology: true ,
             useCreateIndex : true
