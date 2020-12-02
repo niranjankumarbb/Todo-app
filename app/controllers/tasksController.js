@@ -15,10 +15,12 @@ tasksController.list = (req, res) => {
 
 tasksController.create = (req,res)=>{
     const body = req.body
+    console.log('taskscontroller create body details', body)
     const task= new Task(body)
     task.user = req.user._id
-    task.save( )
+    task.save()
     .then((tasks)=>{
+        console.log('saved task details', tasks)
         res.json(tasks)
     })
     .catch((err)=>{
