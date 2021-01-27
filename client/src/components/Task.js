@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import {startPostTask, startGetTasks} from '../actions/taskAction'
 import TaskBox from './TaskBox'
+import './style.css'
 
 class Task extends React.Component{
    state = {
@@ -40,13 +41,22 @@ class Task extends React.Component{
         dueDate     : this.state.dueDate
        }
        this.props.dispatch(startPostTask(formData))
+       this.setState({
+        title : '',
+        description : '',
+        completed   : false,
+        dueDate     : undefined
+       })
+
+       
    }
 
    render(){
        console.log('Task component state',this.state)
        return (
-           <div align='right'>
+           <div >
                <TaskBox/>
+               <div className= 'tasks'>
                <form onSubmit ={this.handleSubmit}>
 
                    <div className="form-group">
@@ -66,8 +76,7 @@ class Task extends React.Component{
                    </div>
 
                    <div className="form-group">
-                   <label htmlFor='dueDate'>Due on</label>
-                   <input type='Date' id='dueDate'  name='dueDate' value={this.state.dueDate} onChange={this.handleChange} />
+                    <input type='Date' id='dueDate'  name='dueDate' value={this.state.dueDate} onChange={this.handleChange} />
                    <br/> <br/>
                    </div>
 
@@ -77,6 +86,7 @@ class Task extends React.Component{
                    </div>
  
                </form>
+               </div>
            </div>
        )
    }
