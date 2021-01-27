@@ -16,15 +16,8 @@ const taskSchema = new Schema({
     },
     dueDate   : {
             type : Date ,
-         default : new Date() ,
-          validate : {
-            validator : function(value){
-                return value > new Date() 
-            },
-            message : function(){
-                return 'due date cannot be less than today'
-            }
-         }
+         default : new Date() 
+          
     },
     createdAt : {
         type : Date,
