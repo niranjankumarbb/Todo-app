@@ -6,7 +6,7 @@ const userSchema = new Schema({
      username : {
          type : String,
          required : true,
-         minlength : [6, 'Too short'],
+         minlength : [2, 'Too short'],
          maxlength : [64, 'Too Long'],
          unique : true
      },
@@ -26,7 +26,7 @@ const userSchema = new Schema({
      password : {
          type : String,
          required : true,
-         minlength : [8, 'Too short'],
+         minlength : [2, 'Too short'],
          maxlength : [64, 'Too Long']
      },
      loginCount  :{
