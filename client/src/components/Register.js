@@ -53,7 +53,7 @@ class Register extends React.Component{
 
                 <div className="form-group">
                 <label htmlFor='password'>password</label>
-                <input typr='text' id='password' name='password' value={this.state.password}  onChange={this.handleChange} className="form-control"/>
+                <input type='password' id='password' name='password' value={this.state.password}  onChange={this.handleChange} className="form-control"/>
                 <br/><br/><br/>
                 </div>
 
