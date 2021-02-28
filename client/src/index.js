@@ -6,19 +6,17 @@ import configureStore from './store/configureStore'
 import {startGetTasks} from './actions/taskAction'
 import {startGetUser} from './actions/userAction'
 
-
 const store= configureStore()
-
 
 store.subscribe(()=>{
     console.log('store value', store.getState())
 })
 
-//handle page reloads
-if(localStorage.getItem('tokenTaskbox')){
+ if(localStorage.getItem('tokenTaskbox')){
     store.dispatch(startGetUser())
 }
 store.dispatch(startGetTasks())
+
 const ele = (
     <Provider store={store}>
         <App/>
