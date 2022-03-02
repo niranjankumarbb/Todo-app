@@ -46,13 +46,11 @@ class Task extends React.Component{
         description : '',
         completed   : false,
         dueDate     : undefined
-       })
-
-       
+       })       
    }
 
    render(){
-       console.log('Task component state',this.state)
+    //    console.log('Task component state',this.state)
        return (
            <div >
                <TaskBox/>
@@ -80,11 +78,9 @@ class Task extends React.Component{
                    <br/> <br/>
                    </div>
 
-
                    <div className="form-group">
                    <input type='submit' value='Add Task' className="btn btn-success"/> 
-                   </div>
- 
+                   </div> 
                </form>
                </div>
            </div>
