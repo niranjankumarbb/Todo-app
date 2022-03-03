@@ -50,13 +50,11 @@ class Task extends React.Component{
    }
 
    render(){
-    //    console.log('Task component state',this.state)
-       return (
+        return (
            <div >
                <TaskBox/>
                <div className= 'tasks'>
                <form onSubmit ={this.handleSubmit}>
-
                    <div className="form-group">
                    <input type='text' name='title' value={this.state.title} onChange={this.handleChange} placeholder='title'   />
                    <br/> <br/>
@@ -82,7 +80,7 @@ class Task extends React.Component{
                    <input type='submit' value='Add Task' className="btn btn-success"/> 
                    </div> 
                </form>
-               </div>
+              </div>
            </div>
        )
    }
