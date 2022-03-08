@@ -51,7 +51,7 @@ class TaskBox extends React.Component{
     }
 
    render(){
-      console.log('TaskBox component state',this.state , this.props)
+    //   console.log('TaskBox component state',this.state , this.props)
     return (
        <div align='left'  >           
            <h1> TaskBox</h1><br/>
