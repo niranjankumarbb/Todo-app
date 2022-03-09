@@ -51,8 +51,7 @@ class TaskBox extends React.Component{
     }
 
    render(){
-    //   console.log('TaskBox component state',this.state , this.props)
-    return (
+     return (
        <div align='left'  >           
            <h1> TaskBox</h1><br/>
            <input type='text' value={this.state.search} onChange={this.handleSearch} placeholder='search title'/>
