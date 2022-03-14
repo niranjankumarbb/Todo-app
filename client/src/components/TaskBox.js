@@ -52,8 +52,9 @@ class TaskBox extends React.Component{
 
    render(){
      return (
-       <div align='left'  >           
-           <h1> TaskBox</h1><br/>
+       <div align='left'>           
+           <h1> TaskBox</h1>
+           <br/>
            <input type='text' value={this.state.search} onChange={this.handleSearch} placeholder='search title'/>
            <br/><br/>
            {this.props.tasks.length>0? (
@@ -61,7 +62,7 @@ class TaskBox extends React.Component{
                 <table border='1'>
                  <thead>                                 
                     <tr>
-                     <th><input type='checkbox'  /></th>
+                     <th><input type='checkbox' /></th>
                      <th>Title</th>
                      <th>Created On</th>
                      <th>Due Date</th>
