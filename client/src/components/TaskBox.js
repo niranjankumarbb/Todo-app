@@ -89,7 +89,7 @@ class TaskBox extends React.Component{
              </table>
            </div>
            ):(
-               <h2>Loading... </h2>
+               <h2>Loading..... </h2>
            )}             
        </div>
     )
@@ -101,4 +101,5 @@ const mapStateToProps= (state)=>{
         tasks : state.tasks
     }
 }
+
 export default connect(mapStateToProps)(TaskBox)
