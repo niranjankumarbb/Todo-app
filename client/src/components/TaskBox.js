@@ -67,7 +67,7 @@ class TaskBox extends React.Component{
                      <th>Created On</th>
                      <th>Due Date</th>
                      <th>Actions</th>
-                     </tr>
+                    </tr>
                  </thead>
                  <tbody>
                         {
@@ -82,7 +82,7 @@ class TaskBox extends React.Component{
                                             <td> <button onClick={()=>{
                                                  this.handleClick(task._id)}} className="btn btn-danger">remove</button></td>
                                      </tr>
-                                 )
+                                  )
                              })
                          }
                   </tbody>
