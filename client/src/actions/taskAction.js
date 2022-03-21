@@ -31,8 +31,7 @@ export const startGetTasks = ()=>{
         }
     })
     .then((response)=>{
-        console.log('startGetTasks',response.data)
-         if(response.data){
+          if(response.data){
            dispatch(setTasks(response.data))
         }else {
             alert('error while receiving data')

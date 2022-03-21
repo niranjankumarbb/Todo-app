@@ -83,7 +83,7 @@ class TaskBox extends React.Component{
                                                  this.handleClick(task._id)}} className="btn btn-danger">remove</button></td>
                                      </tr>
                                   )
-                             })
+                             }) 
                          }
                   </tbody>
              </table>
