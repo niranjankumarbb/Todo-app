@@ -73,7 +73,7 @@ export const startPutTask=(id, data)=>{
             }
         })
         .then(response=>{
-            console.log('front end startputTask response',response.data)
+            // console.log('front end startputTask response',response.data)
             if(Object.values(response.data).length>0){
                 alert('Successfully updated inside db')
                 dispatch(startGetTasks())
